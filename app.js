@@ -7,6 +7,7 @@ class App {
     this.form = document.querySelector("#form");
     this.noteTitle = document.querySelector("#note-title");
     this.noteText = document.querySelector("#note-text");
+    this.notes = document.querySelector("#notes");
     this.formButtons = document.querySelector("#form-buttons");
     //method
     this.addEventListeners();
