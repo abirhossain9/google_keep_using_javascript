@@ -45,6 +45,8 @@ class App {
     this.form.classList.remove(".form-open");
     this.noteTitle.style.display = "none";
     this.formButtons.style.display = "none";
+    this.noteTitle.value = "";
+    this.noteText.value = "";
   }
   addNote(note) {
     const newNote = {
@@ -54,7 +56,7 @@ class App {
       id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1 : 1,
     };
     this.notes = [...this.notes, newNote];
-    console.log(this.notes);
+    this.closeForm();
   }
 }
 new App();
