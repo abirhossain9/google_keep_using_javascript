@@ -57,6 +57,7 @@ class App {
       id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1 : 1,
     };
     this.notes = [...this.notes, newNote];
+    //close form after adding note to the array
     this.closeForm();
   }
 }
